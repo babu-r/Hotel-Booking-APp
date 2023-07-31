@@ -5,7 +5,6 @@ import { useNavigate } from "react-router";
 
 
 const Layout = ({ children }) => {
-
    const navigate = useNavigate();
 
    useEffect(() => {
@@ -13,6 +12,7 @@ const Layout = ({ children }) => {
          if (!user) navigate("/");
          console.log(user);
       });
+      // eslint-disable-next-line react-hooks/exhaustive-deps
    }, []);
 
    return (
