@@ -1,3 +1,26 @@
+## React Hotel Booking App
+
+## Introduction
+
+You will be creating a  booking web application using React.js library where users can view different hotels and reserve one for a specific date. You can use Material UI to build the UI components of the app, and Firebase for adding backend functionalities like CRUD operations and authentication to the app.
+
+
+## Project Breakdown
+
+1. **Login Page** - The first page the user visits where the user has to login using google authentication. Use `Firebase Google Authentication` to build this functionality. 
+
+2. **Home Page** - Fetch hotel data from this api endpoint - [`https://hotels-api-4ltr.onrender.com/api/hotels](https://hotels-api-4ltr.onrender.com/api/hotels)` and display the hotel image, hotel name and the per day charges in individual cards. 
+
+3. **Hotel Info Page** - When the user clicks on single hotel, redirect the user to the hotel info page, where the details of a specific hotel is displayed. Use this api end point to fetch the data of a single hotel - `https://hotels-api-4ltr.onrender.com/api/hotels/{slug}.` Replace the {slug} with the slug data of a specific hotel which can be retrieved from the previous endpoint. Use `React query` parameters to retrieve the slug data of a hotel from the url in the hotel info page. 
+
+4. **Booking Modal** - In the Hotel Info Page, create a Reserve button which opens up a modal for the user to enter details like - number of guests, checkin date and checkout date. Once reserved, use `Firestore database` in Firebase to store the reservation data.
+
+5. **Profile Page** - In the Profile Page retrieve all the bookings of the user from the `Firestore` and display it in a table. 
+
+6. **Navbar** - In the Navbar there will the logo of the website, the home button and the profile image. The home button would take users to the home page and clicking on the profile image would give users the option to go the profile page or logout of the website. Once logged out the users should be redirected to the login page. You can add a theme togller button in the navbar as well which can be used to toglle the theme of the website from light to dark mode.
+
+7. **Hosting the Project** - Host the project using Netlify or Firebase hosting.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
